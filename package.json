@@ -1,0 +1,41 @@
+{
+  "name": "github-org-bot",
+  "version": "0.0.1",
+  "description": "Telegram bot for notifications over an organization",
+  "main": "./src/index.js",
+  "scripts": {
+    "eslint": "eslint src test",
+    "eslint-fix": "npm run eslint -- --fix",
+    "test": "npm run test-mocha && npm run eslint",
+    "test-mocha": "mocha --require should --reporter mocha-better-spec-reporter"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maasencioh/github-org-bot.git"
+  },
+  "keywords": [
+    "telegram",
+    "bot",
+    "github",
+    "org",
+    "organization"
+  ],
+  "author": "Miguel Asencio <maasencioh@gmail.com> (https://github.com/maasencioh)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/maasencioh/github-org-bot/issues"
+  },
+  "tonicExampleFilename": "./tonic.js",
+  "homepage": "https://github.com/maasencioh/github-org-bot#readme",
+  "devDependencies": {
+    "eslint": "^3.4.0",
+    "eslint-config-cheminfo": "^1.2.0",
+    "eslint-plugin-no-only-tests": "^1.1.0",
+    "mocha": "^3.0.2",
+    "mocha-better-spec-reporter": "^3.0.2",
+    "should": "^11.1.0"
+  },
+  "dependencies": {
+    "node-telegram-bot-api": "^0.24.0"
+  }
+}
